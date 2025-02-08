@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="stylec.css">
+  <title>Project Zero - Character Search</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-md5/2.19.0/js/md5.min.js"></script>
+</head>
+
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <img src = "wp5104277.jpg" alt = "image"
+    <h1>Project Zero - Character Search</h1>
+    <input type="text" id="search-input" placeholder="Search for characters...">
+    <button onclick="searchCharacter()">Search</button>
+  </header>
+
+  <!-- Search Results Section -->
+  <section id="results-container"></section>
+ <!-- Video Clip Button -->
+  <a href="trailers.html" class="read-more-button">Watch Clip</a>
+  <!-- Main Content -->
+  <div class="main-content">
+
+    <!-- Box 1: Character Cards Section -->
+    <section class="content-box">
+      <h2>Popular Characters</h2>
+      <div class="grid-container">
+        <div class="card">
+          <img src="batman-red-5120x2880-19038.jpg" alt="Batman">
+          <h3>The Dark Knight</h3>
+          <p>"All men have limits. They learn what they are and then learn not to exceed them. I ignore mine."</p>
+        </div>
+
+        <div class="card">
+          <img src="2345b-16807967691962-1920.jpg" alt="Sukuna">
+          <h3>SUKUNA</h3>
+          <p>"Stand proud. You are strong."</p>
+        </div>
+
+        <div class="card">
+          <img src="shadow-in-sonic-3-hd-cool_bmhlbmuUmZqaraWkpJRnZmVlrWdtaGs.jpg" alt="Shadow">
+          <h3>Shadow</h3>
+          <p>"You're Not Even Good Enough To Be My Fake."</p>
+        </div>
+
+        <div class="card">
+          <img src="53e15-16596004347246.png" alt="Naruto">
+          <h3>Naruto</h3>
+          <p>"I won't run away, I never go back on my word! That's my nindo: my ninja way."</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Box 2: Article Previews Section -->
+    <section class="content-box">
+      <h2>Latest Articles</h2>
+      <div class="articles">
+        <div class="article-preview">
+          <img src="dreamworks-logo-wallpaper-00093.jpg" alt="DreamWorks">
+          <h3>DreamWorks</h3>
+          <p>WELCOME TO THE DREAMWORKS UNIVERSE.</p>
+          <a href="article1.html" class="read-more-button">Read more</a>
+        </div>
+
+        <div class="article-preview">
+          <img src="ga196e547o1a1.jpg" alt="Marvel Universe">
+          <h3>Marvel Universe</h3>
+          <p>WELCOME TO THE MARVEL UNIVERSE.</p>
+          <a href="article2.html" class="read-more-button">Read more</a>
+        </div>
+
+        <div class="article-preview">
+          <img src="GWZ8QJEwS9Je6zQHLCZ3X9.jpg" alt="DC Universe">
+          <h3>DC Universe</h3>
+          <p>WELCOME TO THE DC UNIVERSE.</p>
+          <a href="article3.html" class="read-more-button">Read more</a>
+        </div>
+
+        <div class="article-preview">
+          <img src="2730401.jpg" alt="Anime World">
+          <h3>Anime World</h3>
+          <p>Welcome to the world of anime.</p>
+          <a href="article4.html" class="read-more-button">Read more</a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>© 2025 Project Zero | All Rights Reserved</p>
+    <a href="#">Privacy Policy</a>
+  </footer>
+
+  <!-- JavaScript for Interactive Animations -->
+  <script src="Hero.js"></script>
+  <script>
+    document.querySelectorAll('.card').forEach(card => {
+      card.addEventListener('mouseover', () => {
+        card.style.transform = 'scale(1.05)';
+        card.style.boxShadow = '0 12px 20px rgba(212, 0, 0, 0.3)';
+      });
+      card.addEventListener('mouseout', () => {
+        card.style.transform = 'scale(1)';
+        card.style.boxShadow = '0 4px 10px rgba(0, 0, 0, 0.2)';
+      });
+    });
+
+    document.querySelectorAll('.article-preview').forEach(article => {
+      article.addEventListener('mouseover', () => {
+        article.style.transform = 'scale(1.05)';
+        article.style.boxShadow = '0 6px 20px rgba(212, 0, 0, 0.3)';
+      });
+      article.addEventListener('mouseout', () => {
+        article.style.transform = 'scale(1)';
+        article.style.boxShadow = '0 4px 10px rgba(0, 0, 0, 0.2)';
+      });
+    });
+  </script>
+
+</body>
+</html>
